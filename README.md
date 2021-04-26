@@ -5,7 +5,7 @@
 <p>Summary: Iris flower data set is a multivariable data set collected by Sir Ronald Aylmer Fisher and published in journal article &apos;The Use of Multiple Measurements in Taxonomic Problems.&apos; in Annals of Eugenics, 7 in 1936. Data set contain biological data of Iris flower and is divided by species into Iris setosa, Iris virginica and Iris versicolor.</p>
 <p>Dataset contains 150 observations altogether, 50 observations for each species. Features include length and width of sepal and petal, also Iris species name.</p>
 
-<p align="left"><img src="https://www.fs.fed.us/wildflowers/beauty/iris/images/flower/blueflagiris_flower_lg.jpg" alt="flower/blueflagiris_flower_lg" border="0" width=300px></p><br>
+<p align="center"><img src="https://www.fs.fed.us/wildflowers/beauty/iris/images/flower/blueflagiris_flower_lg.jpg" alt="flower/blueflagiris_flower_lg" border="0" width=300px></p><br>
 
 <p align="left">Iris flower sepal and petal from U.S Forest Service website: https://www.fs.fed.us/wildflowers/beauty/iris/flower.shtml</p>
 
