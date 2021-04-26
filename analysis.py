@@ -42,11 +42,99 @@ with open("summary.txt", "a+") as f:
     f.write("Virginica:\n{}\n\n".format(descr2))
     f.write("Versicolor:\n{}\n\n".format(descr3))
 
-# Plots 
-#sns
+# Plots
 
-# Saving plots
+# Simple Histogram
+iris.hist()
+plt.savefig("1simple_histogram.png")
 
-#plt.show()
-#plt.savefig("plot_name.png")
+#Histogram by Specie
+sns.set_style=("darkgrid")
+fig, axs = plt.subplots(2, 2, figsize=(5, 5))
+fig.suptitle('Setosa Histograms')
+sns.histplot(data=setosa, x="sepallength", kde=False, color="blue", ax=axs[0, 0])
+sns.histplot(data=setosa, x="sepalwidth", kde=False, color="pink", ax=axs[0, 1])
+sns.histplot(data=setosa, x="petallength", kde=False, color="green", ax=axs[1, 0])
+sns.histplot(data=setosa, x="petalwidth", kde=False, color="brown", ax=axs[1, 1])
+plt.tight_layout()
+plt.savefig("2setosa_histogram.png")
+
+sns.set_style=("darkgrid")
+fig, axs = plt.subplots(2, 2, figsize=(5, 5))
+fig.suptitle('Versicolor Histograms')
+sns.histplot(data=versicolor, x="sepallength", kde=False, color="y", ax=axs[0, 0])
+sns.histplot(data=versicolor, x="sepalwidth", kde=False, color="g", ax=axs[0, 1])
+sns.histplot(data=versicolor, x="petallength", kde=False, color="gray", ax=axs[1, 0])
+sns.histplot(data=versicolor, x="petalwidth", kde=False, color="magenta", ax=axs[1, 1])
+plt.tight_layout()
+plt.savefig("3versicolor_histogram.png")
+
+sns.set_style=("darkgrid")
+fig, axs = plt.subplots(2, 2, figsize=(5, 5))
+fig.suptitle('Virginica Histograms')
+sns.histplot(data=virginica, x="sepallength", kde=False, color="teal", ax=axs[0, 0])
+sns.histplot(data=virginica, x="sepalwidth", kde=False, color="gray", ax=axs[0, 1])
+sns.histplot(data=virginica, x="petallength", kde=False, color="yellow", ax=axs[1, 0])
+sns.histplot(data=virginica, x="petalwidth", kde=False, color="m", ax=axs[1, 1])
+plt.tight_layout()
+plt.savefig("4virginica_histogram.png")
+
+#Iris relationship pair plot by species with histogram
+p=sns.pairplot(iris, hue="species", height=2)
+p.map_diag(sns.histplot)
+p.map_offdiag(sns.scatterplot)
+plt.savefig("5pairplot_histogram.png")
+
+#Scatterplots by species
+plt.title("Sepal lenght and width comparison by species")
+sns.set_style=("whitegrid")
+sns.scatterplot(x=iris["sepallength"], y=iris["sepalwidth"], hue=iris["species"],s=50)
+plt.savefig("6scatterplot1.png")
+
+plt.title("Petal lenght and width comparison by species")
+sns.set_style=("whitegrid")
+sns.scatterplot(x=iris["petallength"], y=iris["petalwidth"], hue=iris["species"],s=50)
+plt.savefig("7scatterplot2.png")
+
+#Multivariable plots for comparison
+sns.set_style=('white')
+sns.distplot(setosa['sepallength'], color='green', kde=True, label='Setosa')
+sns.distplot(versicolor['sepallength'], color='blue', kde=True, label='Versicolor')
+sns.distplot(virginica['sepallength'], color='red', kde=True, label='Virginica')
+plt.legend()
+plt.title('Sepal Length Comparson by Species')
+plt.xlabel('Sepal Length in cm')  
+plt.ylabel('Quantity')
+plt.savefig("8multivariable1.png")
+
+sns.set_style=('white')
+sns.distplot(setosa['sepalwidth'], color='green', kde=True, label='Setosa')
+sns.distplot(versicolor['sepalwidth'], color='blue', kde=True, label='Versicolor')
+sns.distplot(virginica['sepalwidth'], color='red', kde=True, label='Virginica')
+plt.legend()
+plt.title('Sepal Width Comparson by Species')
+plt.xlabel('Sepal Width in cm')  
+plt.ylabel('Quantity')
+plt.savefig("9multivariable2.png")
+
+sns.set_style=('dark')
+sns.distplot(setosa['petallength'], color='green', kde=True, label='Setosa')
+sns.distplot(versicolor['petallength'], color='blue', kde=True, label='Versicolor')
+sns.distplot(virginica['petallength'], color='red', kde=True, label='Virginica')
+plt.legend()
+plt.title('Petal Length Comparson by Species')
+plt.xlabel('Petal Length in cm')  
+plt.ylabel('Quantity')
+plt.savefig("10multivariable3.png")
+
+sns.set_style=('dark')
+sns.distplot(setosa['petalwidth'], color='green', kde=True, label='Setosa')
+sns.distplot(versicolor['petalwidth'], color='blue', kde=True, label='Versicolor')
+sns.distplot(virginica['petalwidth'], color='red', kde=True, label='Virginica')
+plt.legend()
+plt.title('Petal width Comparson by Species')
+plt.xlabel('Petal width in cm')  
+plt.ylabel('Quantity')
+plt.savefig("11multivariable4.png")
+
 print("ALL works ook")

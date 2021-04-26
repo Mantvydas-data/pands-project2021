@@ -1,6 +1,6 @@
 # pands-project2021
 
-<h1>MIT Programming and Scripting 2021 Project</h1>
+<h1>GMIT Programming and Scripting 2021 Project</h1>
 
 <b>This depository contains Iris dataset analysis using Python.</b>
 
@@ -27,4 +27,6 @@ https://www.w3schools.com/python/python_ref_functions.asp
 https://ourcodingclub.github.io/tutorials/pandas-python-intro/
 https://www.w3schools.com/python/python_strings_escape.asp
 https://thispointer.com/how-to-append-text-or-lines-to-a-file-in-python/
-
+https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+https://seaborn.pydata.org/examples/index.html
+https://dev.to/thalesbruno/subplotting-with-matplotlib-and-seaborn-5ei8
