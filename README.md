@@ -12,6 +12,47 @@
 <p>Dataset is available to be downloaded from UCI Machine Learning Repository. It contains two files, one for data and one for dataset description.</p>
 <p>For this project Python 3.8.5 is being used with Anaconda package for data analysis.</p>
 <p>To start the analysis we load required packages: Pandas, Numpy, Matplotlib.pyplot and Seaborn.</p>
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
+<p>We are using Pandas to download Iris flower dataset from UCI Machine Learning depository. &nbsp;After overview of data column names are added and it is saved in CSV format in the working directory.</p>
+<p>To get familiar with dataset we check data shape, count missing values and look at top ten lines:</p>
+
+```python
+shape = np.shape(iris)
+na = iris.isnull().sum()
+head = iris.head(10) 
+sample = iris.sample(15)
+counts = iris["species"].value_counts()
+```
+<p>To get descriptive statistics by flower species we divide dataset into 3 sections that is called slicing:</p>
+
+```python
+descr1 = pd.DataFrame(setosa).describe()
+descr2 = pd.DataFrame(virginica).describe()
+descr3 = pd.DataFrame(versicolor).describe()
+```
+<p>All the data generated so far is being saved into a summary.txt file in an append mode:</p>
+
+```python
+with open("summary.txt", "a+") as f:
+    f.write("\n\t This file provides summary of Iris dataset analysis \n\n")
+    f.write("Dataset shape is (lines, columns): \n{}\n\n".format(shape))
+    f.write("Check for any missing values: \n{}\n\n".format(na))
+    f.write("Top of dataset: \n{}\n\n".format(head))
+    f.write("Data sample of 15 instances: \n{} \n\n".format(sample))
+    f.write("\n\n\t Decriptive statistics by Iris flower species: \n\n")
+    f.write("Setosa:\n{}\n\n".format(descr1))
+    f.write("Virginica:\n{}\n\n".format(descr2))
+    f.write("Versicolor:\n{}\n\n".format(descr3))
+```
+
+# Plotting
+<p>For plotting we are using matplotlib.pyplot and seaborn with seaborn having a nicer look all together without extensive tweaking of code.</p>
+
 <p><br><br></p>
 <h3>References of sources used:</h3>
 <p>https://en.wikipedia.org/wiki/Iris_flower_data_set</p>
