@@ -5,8 +5,9 @@
 <p>Summary: Iris flower data set is a multivariable data set collected by Sir Ronald Aylmer Fisher and published in journal article &apos;The Use of Multiple Measurements in Taxonomic Problems.&apos; in Annals of Eugenics, 7 in 1936. Data set contain biological data of Iris flower and is divided by species into Iris setosa, Iris virginica and Iris versicolor.</p>
 <p>Dataset contains 150 observations altogether, 50 observations for each species. Features include length and width of sepal and petal, also Iris species name.</p>
 
-<p>&lt;p align=&quot;left&quot;&gt;&lt;img src=&quot;https://www.fs.fed.us/wildflowers/beauty/iris/images/flower/blueflagiris_flower_lg.jpg&quot; alt=&quot;flower/blueflagiris_flower_lg&quot; border=&quot;0&quot; width=300px&gt;&lt;/p&gt;&lt;br&gt;</p>
-<p>&lt;p align=&quot;left&quot;&gt;Iris flower sepal and petal from U.S Forest Service website: https://www.fs.fed.us/wildflowers/beauty/iris/flower.shtml&lt;/p&gt;</p>
+<p align="left"><img src="https://www.fs.fed.us/wildflowers/beauty/iris/images/flower/blueflagiris_flower_lg.jpg" alt="flower/blueflagiris_flower_lg" border="0" width=300px></p><br>
+
+<p align="left">Iris flower sepal and petal from U.S Forest Service website: https://www.fs.fed.us/wildflowers/beauty/iris/flower.shtml</p>
 
 <p>Analysis of this dataset will be performed using Python, that is a powerful high level programming language. Various Python packages will be used to explore and summarize the findings.&nbsp;</p>
 <p>Dataset is available to be downloaded from UCI Machine Learning Repository. It contains two files, one for data and one for dataset description.</p>
