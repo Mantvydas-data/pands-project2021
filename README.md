@@ -2,7 +2,7 @@
 <h2 style="text-align: center;">GMIT Programming and Scripting 2021 Project</h2>
 <h2 style="text-align: center;">This depository contains Iris dataset analysis using Python.</h2>
 <h4>Student: Mantvydas Jokubaitis</h4>
-<p>Summary: Iris flower data set is a multivariable data set collected by Sir Ronald Aylmer Fisher and published in journal article &apos;The Use of Multiple Measurements in Taxonomic Problems.&apos; in Annals of Eugenics, 7 in 1936. Data set contain biological data of Iris flower and is divided by species into Iris setosa, Iris virginica and Iris versicolor.</p>
+<p>Summary: Iris flower data set is a multivariable data set collected by Sir Ronald Aylmer Fisher and published in journal article 'The Use of Multiple Measurements in Taxonomic Problems.' in Annals of Eugenics, 7 in 1936. Data set contain biological data of Iris flower and is divided by species into Iris setosa, Iris virginica and Iris versicolor.</p>
 <p>Dataset contains 150 observations altogether, 50 observations for each species. Features include length and width of sepal and petal, also Iris species name.</p>
 
 
@@ -17,7 +17,12 @@ Photo by <a href="https://unsplash.com/@stepanovgg?utm_source=unsplash&utm_mediu
 
 ___
 
-<p>Analysis of this dataset will be performed using Python, that is a powerful high level programming language. Various Python packages will be used to explore and summarize the findings.&nbsp;</p>
+
+<h4>Running the code</h4>
+<p>Code is run in full as one program analysis.py and is performing all the preset tasks: Importing required packages, downloading data from the url, adding headers and saving it in CSV format in working directory, descriptive statistics are run with Numpy, Pandas and Python built in functions. Results are saved to the summary text file. Plots are generated in a sequence and saved in a numbered order</p>
+___
+
+<p>Analysis of this dataset will be performed using Python, that is a powerful high level programming language. Various Python packages will be used to explore and summarize the findings.</p>
 <p>Dataset is available to be downloaded from UCI Machine Learning Repository. It contains two files, one for data and one for dataset description.</p>
 <p>For this project Python 3.8.5 is being used with Anaconda package for data analysis.</p>
 <p>To start the analysis we load required packages: Pandas, Numpy, Matplotlib.pyplot and Seaborn.</p>
@@ -29,7 +34,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 ```
 
-<p>We are using Pandas to download Iris flower dataset from UCI Machine Learning depository. &nbsp;After overview of data column names are added and it is saved in CSV format in the working directory.</p>
+<p>We are using Pandas to download Iris flower dataset from UCI Machine Learning depository. After overview of data column names are added and it is saved in CSV format in the working directory.</p>
 
 ___
 
