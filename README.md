@@ -5,12 +5,14 @@
 <p>Summary: Iris flower data set is a multivariable data set collected by Sir Ronald Aylmer Fisher and published in journal article &apos;The Use of Multiple Measurements in Taxonomic Problems.&apos; in Annals of Eugenics, 7 in 1936. Data set contain biological data of Iris flower and is divided by species into Iris setosa, Iris virginica and Iris versicolor.</p>
 <p>Dataset contains 150 observations altogether, 50 observations for each species. Features include length and width of sepal and petal, also Iris species name.</p>
 
-<p align="center"><img src="https://www.fs.fed.us/wildflowers/beauty/iris/images/flower/blueflagiris_flower_lg.jpg" alt="flower/blueflagiris_flower_lg" border="0" width=300px></p><br>
+![Tim Rüßmann](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/1.PNG) ![Iris flower sepal and petal from U.S Forest Service website](https://www.fs.fed.us/wildflowers/beauty/iris/images/flower/blueflagiris_flower_lg.jpg) ![Dmitry Stepanov](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/1.PNG) 
+
+
 Photo by <a href="https://unsplash.com/@timaesthetic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tim Rüßmann</a> on <a href="https://unsplash.com/s/photos/iris-flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Photo by <a href="https://unsplash.com/@stepanovgg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dmitry Stepanov</a> on <a href="https://unsplash.com/s/photos/iris-flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
-<p align="left">Iris flower sepal and petal from U.S Forest Service website: https://www.fs.fed.us/wildflowers/beauty/iris/flower.shtml</p>
+
 
 <p>Analysis of this dataset will be performed using Python, that is a powerful high level programming language. Various Python packages will be used to explore and summarize the findings.&nbsp;</p>
 <p>Dataset is available to be downloaded from UCI Machine Learning Repository. It contains two files, one for data and one for dataset description.</p>
@@ -99,7 +101,4 @@ with open("summary.txt", "a+") as f:
 <p>https://machinelearningmastery.com/machine-learning-in-python-step-by-step/</p>
 <p>https://seaborn.pydata.org/examples/index.html</p>
 <p>https://dev.to/thalesbruno/subplotting-with-matplotlib-and-seaborn-5ei8</p>
-<<<<<<< HEAD
 <p>https://www.markdownguide.org/basic-syntax/</p>
-=======
->>>>>>> d0ddaae7b4eeb0ed6a0779bd3a3e77f44659c80d
