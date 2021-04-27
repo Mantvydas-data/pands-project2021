@@ -6,7 +6,10 @@
 <p>Dataset contains 150 observations altogether, 50 observations for each species. Features include length and width of sepal and petal, also Iris species name.</p>
 
 <p align="center"><img src="https://www.fs.fed.us/wildflowers/beauty/iris/images/flower/blueflagiris_flower_lg.jpg" alt="flower/blueflagiris_flower_lg" border="0" width=300px></p><br>
+Photo by <a href="https://unsplash.com/@timaesthetic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tim Rüßmann</a> on <a href="https://unsplash.com/s/photos/iris-flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
+Photo by <a href="https://unsplash.com/@stepanovgg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dmitry Stepanov</a> on <a href="https://unsplash.com/s/photos/iris-flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 <p align="left">Iris flower sepal and petal from U.S Forest Service website: https://www.fs.fed.us/wildflowers/beauty/iris/flower.shtml</p>
 
 <p>Analysis of this dataset will be performed using Python, that is a powerful high level programming language. Various Python packages will be used to explore and summarize the findings.&nbsp;</p>
