@@ -15,6 +15,8 @@ Photo by <a href="https://unsplash.com/@stepanovgg?utm_source=unsplash&utm_mediu
   
 <a href="https://www.fs.fed.us/wildflowers/beauty/iris/flower.shtml">U.S Forest Service Website</a>
 
+___
+
 <p>Analysis of this dataset will be performed using Python, that is a powerful high level programming language. Various Python packages will be used to explore and summarize the findings.&nbsp;</p>
 <p>Dataset is available to be downloaded from UCI Machine Learning Repository. It contains two files, one for data and one for dataset description.</p>
 <p>For this project Python 3.8.5 is being used with Anaconda package for data analysis.</p>
@@ -26,7 +28,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
+
 <p>We are using Pandas to download Iris flower dataset from UCI Machine Learning depository. &nbsp;After overview of data column names are added and it is saved in CSV format in the working directory.</p>
+
+___
+
 <p>To get familiar with dataset we check data shape, count missing values and look at top ten lines:</p>
 
 ```python
@@ -44,6 +50,8 @@ counts = iris["species"].value_counts()
 
 ![A sample of 15 instances](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/2.PNG)
 
+___
+
 <p>To get descriptive statistics by flower species we divide dataset into 3 sections and use describe function:</p>
 
 ```python
@@ -53,6 +61,7 @@ descr3 = pd.DataFrame(versicolor).describe()
 ```
 ![Descriptive statistics by flower species](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/3.PNG)
 
+___
 
 <p>All the data generated so far is being saved into a summary.txt file in an append mode.</p>
 <p>Fot text formating in txt file we use string escape characters:</p>
@@ -70,21 +79,28 @@ with open("summary.txt", "a+") as f:
     f.write("Versicolor:\n{}\n\n".format(descr3))
 ```
 
+___
+
 # Plotting
 <p>For plotting we are using matplotlib.pyplot and seaborn packages with seaborn having a nicer all over look </p>
+
+
+<p>Below is simple histogram showing sepal lenght/width and petal lenght/width in cm and total instances it was observed.</p>
+
+![Simple histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/1simple_histogram.png)
 
 ```python
 # Simple Histogram
 iris.hist()
 plt.savefig("1simple_histogram.png")
 ```
-<p>Below is simple histogram showing sepal lenght/width and petal lenght/width in cm and total instances it was observed.</p>
 
-![Simple histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/1simple_histogram.png)
+___
 
 <p>Following three histogram looks closely at sepal lenght/width and petal lenght/width in cm, but separated by Iris species.</p>
 
-![Setosa histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/2setosa_histogram.png) ![Versicolor histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/3versicolor_histogram.png)
+![Setosa histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/2setosa_histogram.png)
+![Versicolor histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/3versicolor_histogram.png)
 ![Virginica histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/4virginica_histogram.png)
 
 <p>Code for it below, we are using dark grid backgroud with 4 subplots. ax specifies its location in the grid. 
@@ -104,6 +120,8 @@ plt.tight_layout()
 plt.savefig("2setosa_histogram.png")
 ```
 
+___
+
 <p>Pair plot below has a combination of histograms and scatterplots, it contains a lot of condensed data in one plot,
 but is more appealing for the eye and can be used to compare data as differences can be clearly identified.</p>
 
@@ -121,6 +139,8 @@ p.map_offdiag(sns.scatterplot)
 plt.savefig("5pairplot_histogram.png")
 plt.show()
 ```
+
+___
 
 <p>Scatterplots are good at highlighting clustered data as seen in below plots.
 It is clear that Iris-setosa petal width and lenght is considerably smaller compared with other two species, while it has the widest sepal.</p>
@@ -140,10 +160,14 @@ plt.savefig("6scatterplot1.png")
 plt.show()
 ```
 
+___
+
 <p>Multivariable plots are overlaying histograms, below we have four plots displaying Iris flower kind separated by different parameter.</p>
 
-![Multivariable1](https://github.com/Mantvydas-data/pands-project2021/blob/main/8multivariable1.png) |![Multivariable2](https://github.com/Mantvydas-data/pands-project2021/blob/main/9multivariable2.png)
-![Multivariable3](https://github.com/Mantvydas-data/pands-project2021/blob/main/10multivariable3.png) |![Multivariable4](https://github.com/Mantvydas-data/pands-project2021/blob/main/11multivariable4.png)
+![Multivariable1](https://github.com/Mantvydas-data/pands-project2021/blob/main/8multivariable1.png)
+![Multivariable2](https://github.com/Mantvydas-data/pands-project2021/blob/main/9multivariable2.png)
+![Multivariable3](https://github.com/Mantvydas-data/pands-project2021/blob/main/10multivariable3.png)
+![Multivariable4](https://github.com/Mantvydas-data/pands-project2021/blob/main/11multivariable4.png)
 
 ```python
 #Multivariable plots
@@ -160,7 +184,12 @@ plt.show()
 ```
 <p>Background style is set as white, comparison parameter is 'sepallength', label is identified for plot legend, kde as True displays smooth value distribution line.</p>
 
-<h3>References of sources used:</h3>
+___
+
+<h3>References of sources used:</h3>*
+
+___
+
 <p>https://en.wikipedia.org/wiki/Iris_flower_data_set</p>
 <p>https://www.w3schools.com/html/html_paragraphs.asp</p>
 <p>https://archive.ics.uci.edu/ml/datasets/Iris</p>
