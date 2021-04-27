@@ -33,21 +33,24 @@
 
 <div class="row">
   <div class="column">
-    <img src="https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/tim-russmann-hws29QtFM3U-unsplash.jpg" alt="Tim Rüßmann" style="width:50%">
+    <img src="https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/tim-russmann-hws29QtFM3U-unsplash.jpg" alt="Tim Rüßmann" style="width:10%">
   </div>
   <div class="column">
-    <img src="https://www.fs.fed.us/wildflowers/beauty/iris/images/flower/blueflagiris_flower_lg.jpg" alt="Iris flower sepal and petal from U.S Forest Service website" style="width:50%">
+    <img src="https://www.fs.fed.us/wildflowers/beauty/iris/images/flower/blueflagiris_flower_lg.jpg" alt="Iris flower sepal and petal from U.S Forest Service website" style="width:10%">
   </div>
   <div class="column">
-    <img src="https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/tim-russmann-hws29QtFM3U-unsplash.jpg" alt="Dmitry Stepanov" style="width:50%">
+    <img src="https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/tim-russmann-hws29QtFM3U-unsplash.jpg" alt="Dmitry Stepanov" style="width:10%">
   </div>
 </div>
 
 </body>
 </html>
 
-![Tim Rüßmann](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/tim-russmann-hws29QtFM3U-unsplash.jpg) ![Iris flower sepal and petal from U.S Forest Service website](https://www.fs.fed.us/wildflowers/beauty/iris/images/flower/blueflagiris_flower_lg.jpg) ![Dmitry Stepanov](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/tim-russmann-hws29QtFM3U-unsplash.jpg) 
 
+
+
+![Tim Rüßmann](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/tim-russmann-hws29QtFM3U-unsplash.jpg) ![Iris flower sepal and petal from U.S Forest Service website](https://www.fs.fed.us/wildflowers/beauty/iris/images/flower/blueflagiris_flower_lg.jpg) ![Dmitry Stepanov](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/tim-russmann-hws29QtFM3U-unsplash.jpg) 
+'''
 
 Photo by <a href="https://unsplash.com/@timaesthetic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tim Rüßmann</a> on <a href="https://unsplash.com/s/photos/iris-flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
