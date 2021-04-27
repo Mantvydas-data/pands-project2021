@@ -13,7 +13,7 @@ Photo by <a href="https://unsplash.com/@timaesthetic?utm_source=unsplash&utm_med
 
 Photo by <a href="https://unsplash.com/@stepanovgg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dmitry Stepanov</a> on <a href="https://unsplash.com/s/photos/iris-flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
-<a href="https://www.fs.fed.us/wildflowers/beauty/iris/flower.shtml">U.S Forest Service Website</a>
+<a href="https://www.fs.fed.us/wildflowers/beauty/iris/flower.shtml">Iris flover diagram from U.S Forest Service Website</a>
 
 ___
 
@@ -186,9 +186,7 @@ plt.show()
 
 ___
 
-<h3>References of sources used:</h3>*
-
-___
+<h3>References of sources used:</h3>
 
 <p>https://en.wikipedia.org/wiki/Iris_flower_data_set</p>
 <p>https://www.w3schools.com/html/html_paragraphs.asp</p>
