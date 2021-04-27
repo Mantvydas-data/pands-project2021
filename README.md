@@ -30,10 +30,13 @@ head = iris.head(10)
 sample = iris.sample(15)
 counts = iris["species"].value_counts()
 ```
+<<<<<<< HEAD
 
 ![alt text](------)  ![alt text](------)
 ![alt text](------)
 
+=======
+>>>>>>> d0ddaae7b4eeb0ed6a0779bd3a3e77f44659c80d
 <p>To get descriptive statistics by flower species we divide dataset into 3 sections that is called slicing:</p>
 
 ```python
@@ -41,8 +44,11 @@ descr1 = pd.DataFrame(setosa).describe()
 descr2 = pd.DataFrame(virginica).describe()
 descr3 = pd.DataFrame(versicolor).describe()
 ```
+<<<<<<< HEAD
 ![alt text](------)
 
+=======
+>>>>>>> d0ddaae7b4eeb0ed6a0779bd3a3e77f44659c80d
 <p>All the data generated so far is being saved into a summary.txt file in an append mode:</p>
 
 ```python
@@ -61,11 +67,14 @@ with open("summary.txt", "a+") as f:
 # Plotting
 <p>For plotting we are using matplotlib.pyplot and seaborn with seaborn having a nicer look all together without extensive tweaking of code.</p>
 
+<<<<<<< HEAD
 ![alt text](------)
 
 
 ![alt text](------)
 
+=======
+>>>>>>> d0ddaae7b4eeb0ed6a0779bd3a3e77f44659c80d
 <p><br><br></p>
 <h3>References of sources used:</h3>
 <p>https://en.wikipedia.org/wiki/Iris_flower_data_set</p>
@@ -81,4 +90,7 @@ with open("summary.txt", "a+") as f:
 <p>https://machinelearningmastery.com/machine-learning-in-python-step-by-step/</p>
 <p>https://seaborn.pydata.org/examples/index.html</p>
 <p>https://dev.to/thalesbruno/subplotting-with-matplotlib-and-seaborn-5ei8</p>
+<<<<<<< HEAD
 <p>https://www.markdownguide.org/basic-syntax/</p>
+=======
+>>>>>>> d0ddaae7b4eeb0ed6a0779bd3a3e77f44659c80d
