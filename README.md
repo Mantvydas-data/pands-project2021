@@ -13,6 +13,7 @@ Photo by <a href="https://unsplash.com/@timaesthetic?utm_source=unsplash&utm_med
 
 Photo by <a href="https://unsplash.com/@stepanovgg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dmitry Stepanov</a> on <a href="https://unsplash.com/s/photos/iris-flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
+<a href="https://www.fs.fed.us/wildflowers/beauty/iris/flower.shtml">U.S Forest Service Website</a>
 
 <p>Analysis of this dataset will be performed using Python, that is a powerful high level programming language. Various Python packages will be used to explore and summarize the findings.&nbsp;</p>
 <p>Dataset is available to be downloaded from UCI Machine Learning Repository. It contains two files, one for data and one for dataset description.</p>
@@ -39,11 +40,11 @@ counts = iris["species"].value_counts()
 
 ![Data shape, missing values count and top of dataset](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/1.PNG) 
 
-<p>Also, sample of 15 instances:</p>
+<p>Also, sample of 15 instances and counts of observations per species:</p>
 
 ![A sample of 15 instances](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/2.PNG)
 
-<p>To get descriptive statistics by flower species we divide dataset into 3 sections:</p>
+<p>To get descriptive statistics by flower species we divide dataset into 3 sections and use describe function:</p>
 
 ```python
 descr1 = pd.DataFrame(setosa).describe()
@@ -53,7 +54,8 @@ descr3 = pd.DataFrame(versicolor).describe()
 ![Descriptive statistics by flower species](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/3.PNG)
 
 
-<p>All the data generated so far is being saved into a summary.txt file in an append mode:</p>
+<p>All the data generated so far is being saved into a summary.txt file in an append mode.</p>
+<p>Fot text formating in txt file we use string escape characters:</p>
 
 ```python
 with open("summary.txt", "a+") as f:
@@ -69,23 +71,94 @@ with open("summary.txt", "a+") as f:
 ```
 
 # Plotting
-<p>For plotting we are using matplotlib.pyplot and seaborn with seaborn having a nicer look all together without extensive tweaking of code.</p>
+<p>For plotting we are using matplotlib.pyplot and seaborn packages with seaborn having a nicer all over look </p>
+
+```python
+# Simple Histogram
+iris.hist()
+plt.savefig("1simple_histogram.png")
+```
+<p>Below is simple histogram showing sepal lenght/width and petal lenght/width in cm and total instances it was observed.</p>
 
 ![Simple histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/1simple_histogram.png)
 
+<p>Following three histogram looks closely at sepal lenght/width and petal lenght/width in cm, but separated by Iris species.</p>
 
-![Setosa histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/2setosa_histogram.png)
-![Versicolor histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/3versicolor_histogram.png)
+![Setosa histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/2setosa_histogram.png) ![Versicolor histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/3versicolor_histogram.png)
 ![Virginica histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/4virginica_histogram.png)
 
+<p>Code for it below, we are using dark grid backgroud with 4 subplots. ax specifies its location in the grid. 
+Thight layout function added for graph text not to overlap. Figure is saved as .png file named "2setosa_histogram.png".
+Modified plot function is used three times to get three plots divided by species changing data parameter.</p>
+
+```python
+# Combination Histogram
+sns.set_theme(style="darkgrid")
+fig, axs = plt.subplots(2, 2, figsize=(5, 5))
+fig.suptitle('Setosa Histograms')
+sns.histplot(data=setosa, x="sepallength", kde=False, color="blue", ax=axs[0, 0])
+sns.histplot(data=setosa, x="sepalwidth", kde=False, color="pink", ax=axs[0, 1])
+sns.histplot(data=setosa, x="petallength", kde=False, color="green", ax=axs[1, 0])
+sns.histplot(data=setosa, x="petalwidth", kde=False, color="brown", ax=axs[1, 1])
+plt.tight_layout()
+plt.savefig("2setosa_histogram.png")
+```
+
+<p>Pair plot below has a combination of histograms and scatterplots, it contains a lot of condensed data in one plot,
+but is more appealing for the eye and can be used to compare data as differences can be clearly identified.</p>
+
 ![Pairplot with histograms](https://github.com/Mantvydas-data/pands-project2021/blob/main/5pairplot_histogram.png)
+
+<p>Background style is set as white, hue sets class of the parameter that joins all the combination of plots,
+map_diag sets plot styles for diagonal positions while map_offdiag sets the rest.</p>
+
+```python
+# Pairplots with histograms
+sns.set_theme(style="white")
+p=sns.pairplot(iris, hue="species", height=2)
+p.map_diag(sns.histplot)
+p.map_offdiag(sns.scatterplot)
+plt.savefig("5pairplot_histogram.png")
+plt.show()
+```
+
+<p>Scatterplots are good at highlighting clustered data as seen in below plots.
+It is clear that Iris-setosa petal width and lenght is considerably smaller compared with other two species, while it has the widest sepal.</p>
 
 ![Scatterplot1](https://github.com/Mantvydas-data/pands-project2021/blob/main/6scatterplot1.png)
 ![Scatterplot2](https://github.com/Mantvydas-data/pands-project2021/blob/main/7scatterplot2.png)
 
+<p>Background style is set as white, we identify parameters to be compared and assign them on x and y axis,s=50 sets dot diameter for value points on the plot,
+most seaborn plots are generated with plot legend as a standard.</p>
 
-![Multivariable1](https://github.com/Mantvydas-data/pands-project2021/blob/main/8multivariable1.png) ![Multivariable2](https://github.com/Mantvydas-data/pands-project2021/blob/main/9multivariable2.png)
-![Multivariable3](https://github.com/Mantvydas-data/pands-project2021/blob/main/10multivariable3.png) ![Multivariable4](https://github.com/Mantvydas-data/pands-project2021/blob/main/11multivariable4.png)
+```python
+#Scatterplots by species
+plt.title("Sepal lenght and width comparison by species")
+sns.set_theme(style="white")
+sns.scatterplot(x=iris["sepallength"], y=iris["sepalwidth"], hue=iris["species"],s=50)
+plt.savefig("6scatterplot1.png")
+plt.show()
+```
+
+<p>Multivariable plots are overlaying histograms, below we have four plots displaying Iris flower kind separated by different parameter.</p>
+
+![Multivariable1](https://github.com/Mantvydas-data/pands-project2021/blob/main/8multivariable1.png) |![Multivariable2](https://github.com/Mantvydas-data/pands-project2021/blob/main/9multivariable2.png)
+![Multivariable3](https://github.com/Mantvydas-data/pands-project2021/blob/main/10multivariable3.png) |![Multivariable4](https://github.com/Mantvydas-data/pands-project2021/blob/main/11multivariable4.png)
+
+```python
+#Multivariable plots
+sns.set_theme(style="white")
+sns.distplot(setosa['sepallength'], color='green', kde=True, label='Setosa')
+sns.distplot(versicolor['sepallength'], color='blue', kde=True, label='Versicolor')
+sns.distplot(virginica['sepallength'], color='red', kde=True, label='Virginica')
+plt.legend()
+plt.title('Sepal Length Comparson by Species')
+plt.xlabel('Sepal Length in cm')  
+plt.ylabel('Quantity')
+plt.savefig("8multivariable1.png")
+plt.show()
+```
+<p>Background style is set as white, comparison parameter is 'sepallength', label is identified for plot legend, kde as True displays smooth value distribution line.</p>
 
 <h3>References of sources used:</h3>
 <p>https://en.wikipedia.org/wiki/Iris_flower_data_set</p>
@@ -102,3 +175,5 @@ with open("summary.txt", "a+") as f:
 <p>https://seaborn.pydata.org/examples/index.html</p>
 <p>https://dev.to/thalesbruno/subplotting-with-matplotlib-and-seaborn-5ei8</p>
 <p>https://www.markdownguide.org/basic-syntax/</p>
+<p>https://stackoverflow.com/questions/24319505/how-can-one-display-images-side-by-side-in-a-github-readme-md</p>
+<p>https://wordtohtml.net/</p>
