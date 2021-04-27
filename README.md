@@ -30,25 +30,24 @@ head = iris.head(10)
 sample = iris.sample(15)
 counts = iris["species"].value_counts()
 ```
-<<<<<<< HEAD
+<p>Results of the code displaying shape of data, missing values count and top of dataset:</p>
 
-![alt text](------)  ![alt text](------)
-![alt text](------)
+![Data shape, missing values count and top of dataset](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/1.PNG) 
 
-=======
->>>>>>> d0ddaae7b4eeb0ed6a0779bd3a3e77f44659c80d
-<p>To get descriptive statistics by flower species we divide dataset into 3 sections that is called slicing:</p>
+<p>Also, sample of 15 instances:</p>
+
+![A sample of 15 instances](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/2.PNG)
+
+<p>To get descriptive statistics by flower species we divide dataset into 3 sections:</p>
 
 ```python
 descr1 = pd.DataFrame(setosa).describe()
 descr2 = pd.DataFrame(virginica).describe()
 descr3 = pd.DataFrame(versicolor).describe()
 ```
-<<<<<<< HEAD
-![alt text](------)
+![Descriptive statistics by flower species](https://github.com/Mantvydas-data/pands-project2021/blob/main/readme_images/3.PNG)
 
-=======
->>>>>>> d0ddaae7b4eeb0ed6a0779bd3a3e77f44659c80d
+
 <p>All the data generated so far is being saved into a summary.txt file in an append mode:</p>
 
 ```python
@@ -67,15 +66,22 @@ with open("summary.txt", "a+") as f:
 # Plotting
 <p>For plotting we are using matplotlib.pyplot and seaborn with seaborn having a nicer look all together without extensive tweaking of code.</p>
 
-<<<<<<< HEAD
-![alt text](------)
+![Simple histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/1simple_histogram.png)
 
 
-![alt text](------)
+![Setosa histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/2setosa_histogram.png)
+![Versicolor histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/3versicolor_histogram.png)
+![Virginica histogram](https://github.com/Mantvydas-data/pands-project2021/blob/main/4virginica_histogram.png)
 
-=======
->>>>>>> d0ddaae7b4eeb0ed6a0779bd3a3e77f44659c80d
-<p><br><br></p>
+![Pairplot with histograms](https://github.com/Mantvydas-data/pands-project2021/blob/main/5pairplot_histogram.png)
+
+![Scatterplot1](https://github.com/Mantvydas-data/pands-project2021/blob/main/6scatterplot1.png)
+![Scatterplot2](https://github.com/Mantvydas-data/pands-project2021/blob/main/7scatterplot2.png)
+
+
+![Multivariable1](https://github.com/Mantvydas-data/pands-project2021/blob/main/8multivariable1.png) ![Multivariable2](https://github.com/Mantvydas-data/pands-project2021/blob/main/9multivariable2.png)
+![Multivariable3](https://github.com/Mantvydas-data/pands-project2021/blob/main/10multivariable3.png) ![Multivariable4](https://github.com/Mantvydas-data/pands-project2021/blob/main/11multivariable4.png)
+
 <h3>References of sources used:</h3>
 <p>https://en.wikipedia.org/wiki/Iris_flower_data_set</p>
 <p>https://www.w3schools.com/html/html_paragraphs.asp</p>
